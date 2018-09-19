@@ -22,13 +22,14 @@ class StatefulComponent extends Component<IProps> {
     return (
       <div>
         <h2>
-          Count:
+          Count this:
           {this.props.count}
         </h2>
         <button onClick={this.onclick}>Add</button>
       </div>
     );
   }
+
   private onclick = () => {
     this.setState({ ...this.state, count: this.state.count + 1 });
     this.props.onClick();

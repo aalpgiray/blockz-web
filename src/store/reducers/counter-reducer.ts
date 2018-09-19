@@ -17,7 +17,7 @@ export default (
 ): ICountState => {
   switch (action.type) {
     case 'INCREMENT':
-      return { count: state.count + 10 };
+      return { count: state.count + 1 };
 
     case 'DECREMENT':
       return { count: state.count - 1 };
